@@ -1,0 +1,36 @@
+.sortable-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sortable-list li {
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+
+.sortable-list li > div {
+	padding: 1em;
+	margin: 0;
+	border: 1px solid #999;
+	border-bottom: 2px solid #999;
+}
+
+.sortable-list li.dragging {
+	opacity: 0.5;
+}
+
+.sortable-list li.above-dragged-item.dragover:before {
+	content: '';
+	display: block;
+	padding: 2em;
+	background: #ccc;
+}
+
+.sortable-list li.below-dragged-item.dragover:after {
+	content: '';
+	display: block;
+	padding: 2em;
+	background: #ccc;
+}
